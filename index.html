@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +19,14 @@
       rel="stylesheet">
       <link rel="stylesheet" href="style.css">
       <script src="main.js" defer></script>
-</head>
-<body>
-  <!--Navbar-->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <i class="fab fa-diaspora"></i>
-      <a href="#">Kelby</a>
-    </div>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Kelby</a>
+      </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active">Home</li>
         <li class="navbar__menu__item">About</li>
@@ -34,40 +34,45 @@
         <li class="navbar__menu__item">My work</li>
         <li class="navbar__menu__item">Testimonials</li>
         <li class="navbar__menu__item">Contact</li>
-        
       </ul>
-    </div>
-  </nav>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
-  <!-- Home -->
-  <section id="Home">
-    <img 
-    src="imgs/최재원.jpg" 
-    alt="Kelby's profile photo" 
-    class="home__avatar"
-    >
-    <h1 class="home__title">Hello, <br />I'm Kelby</h1>
-    <h2 class="home__description">강조하고싶은 문장</h2>
-    <button class="home__contact">Contact Me</button>
-  </section>
-
-  <!--About-->
-  <section id="about" class="section">
-    <h1>About me</h1>
-    <p>백엔드 프론트엔드, 프로젝트 머 했다, 나의 어필 두세줄, 경력
-    </p>
-    <div class="about__majors"> 
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <h2 class="major__tittle">Fornt-end</h2>
-        <p class="major__description">
-          HTML, CSS, JavaScript, TypeScript
-          <br />React, Vue, Web APIs
-        </p>
+    <!-- Home -->
+    <section id="Home">
+      <div class="home__container">
+        <img 
+          src="imgs/최재원.jpg" 
+          alt="Kelby's profile photo" 
+          class="home__avatar"/>
+        <h1 class="home__title">Hello, <br />I'm Kelby</h1>
+        <h2 class="home__description">
+        강조하고싶은 문장
+        </h2>
+        <button class="home__contact">Contact Me</button>
       </div>
-      <div class="major">
+    </section>
+
+    <!--About-->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>백엔드 프론트엔드, 프로젝트 머 했다, 나의 어필 두세줄, 경력
+      </p>
+      <div class="about__majors"> 
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__tittle">Fornt-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript
+            <br />React, Vue, Web APIs
+          </div>
+        </div>
+        <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-html5"></i>
           </div>
@@ -120,92 +125,100 @@
     </div>
   </section>
   
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>
-      새로운거 배우는데 관심이 있고 팀도 가능하고 혼자서도 가능하다 등등
-    </p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill_description">
-            <span>HTML</span>
-            <span>99%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>CSS</span>
-            <span>10%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>JavaScript</span>
-              <span>10%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
             <div class="skill">
-              <div class="skill_description">
-                <span>다른거</span>
-                <span>50%</span>
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value"></div>
+                <div class="skill__value" style="width: 99%;"></div>
               </div>
-              <div class="skill">
-                <div class="skill_description">
-                  <span>다른거2</span>
-                  <span>40%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value"></div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
               </div>
-              <div class="skill">
-                <div class="skill_description">
-                  <span>다른거3</span>
-                  <span>99%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value"></div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
               </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>88%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>77%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 77%;"></div>
+              </div>
+            </div>
+          </div>
+        <div class="skillset">
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+                <li><span>Android Studio Code</span></li>
+                <li><span>iOS development tools</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Scrum master</span></li>
+                <li><span>Math</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>  
       </div>
-    </div>
-      <div class="skillset__right">
-        <div class="Tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio Code</span></li>
-            <li><span>Intellij</span></li>
-            <li><span>Android Studio Code</span></li>
-            <li><span>IOS development tools</span></li>
-            <li><span>Sketch app</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-            <li><span>Scrum master</span></li>
-            <li><span>Math</span></li>
-          </ul>
-          <ul class="etc__list">
-
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </section>
+    </section>
+    
   <!-- Work -->
   <section id="work" class="section">
     <h1>My work</h1>
@@ -363,5 +376,10 @@
       2022 Kelby
     </p>
   </section>
-</body>
+
+    <!--Arrow up-->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
 </html>
