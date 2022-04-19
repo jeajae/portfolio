@@ -11,7 +11,8 @@ document.addEventListener('scroll', () => {
     }
 });
 
-   // Handle scrolling when tapping on the navar menu //
+
+// Handle scrolling when tapping on the navar menu //
    const navbarMenu = document.querySelector('.navbar__menu');
    navbarMenu.addEventListener('click', (event) => {
      const target =event.target;
@@ -19,11 +20,17 @@ document.addEventListener('scroll', () => {
      if (link == null) {
        return;
      }
-
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
  });
 
-  // Handle click on "contact me" button on home
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+// Handle click on "contact me" button on home
   const homeContactBtn = document.querySelector('.home__contact');
   homeContactBtn.addEventListener('click', () => {
       scrollIntoView('#contact')
@@ -61,7 +68,7 @@ document.addEventListener('scroll', () => {
           return;
       }
 
-      // Remove selection from the previous item and select the
+  // Remove selection from the previous item and select the
       const active =document.querySelector('.category__btn.selected');
       active.classList.remove('selected');
       const target = 
